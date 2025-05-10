@@ -1,3 +1,6 @@
+## 1.0.0-rc.14
+minor bug fix
+
 ## 1.0.0-rc.13
 
 * chore: update Dependencies for compatibility with newer dart versions
