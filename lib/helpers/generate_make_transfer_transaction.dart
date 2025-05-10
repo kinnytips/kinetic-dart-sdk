@@ -55,7 +55,7 @@ Future<SignedTx> generateMakeTransferTransaction(GenerateMakeTransferOptions opt
   return SignedTx(
     signatures: [
       Signature(List.filled(64, 0), publicKey: feePayerKey),
-      await options.owner.solana.sign(message),
+      await options.owner.solana.sign(message.toByteArray()),
     ],
     compiledMessage: message
   );
